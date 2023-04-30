@@ -24,7 +24,7 @@ $mail->isSMTP();
 $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 
 //Set the hostname of the mail server
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = '...'; //change this one
 //Use `$mail->Host = gethostbyname('smtp.gmail.com');`
 //if your network does not support SMTP over IPv6,
 //though this may cause issues with TLS
@@ -32,7 +32,7 @@ $mail->Host = 'smtp.gmail.com';
 //Set the SMTP port number:
 // - 465 for SMTP with implicit TLS, a.k.a. RFC8314 SMTPS or
 // - 587 for SMTP+STARTTLS
-$mail->Port = 465;
+$mail->Port = 000; //change this one
 
 //Set the encryption mechanism to use:
 // - SMTPS (implicit TLS on port 465) or
@@ -43,23 +43,23 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = 'umerfiromsa@gmail.com';
+$mail->Username = '...';
 
 //Password to use for SMTP authentication
-$mail->Password = '5542#GFiraYa';
+$mail->Password = '...';
 
 //Set who the message is to be sent from
 //Note that with gmail you can only use your account address (same as `Username`)
 //or predefined aliases that you have configured within your account.
 //Do not use user-submitted addresses in here
-$mail->setFrom('umerfiromsa@gmail.com', 'Firomsa Umer');
+$mail->setFrom('....', '...');
 
 //Set an alternative reply-to address
 //This is a good place to put user-submitted addresses
-$mail->addReplyTo('umerfiromsa@gmail.com', 'Firomsa Umer');
+$mail->addReplyTo('....', '...');
 
 //Set who the message is to be sent to
-$mail->addAddress('fcodepenfu@telegmail.com', 'Firomsa Umer');
+$mail->addAddress('....', '...');
 
 //Set the subject line
 $mail->Subject = 'PHPMailer GMail SMTP test';
